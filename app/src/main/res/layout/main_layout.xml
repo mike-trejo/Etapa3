@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen2"
+        android:text="@string/registro_de_usuarios"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/Paterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/apellido_paterno"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/Materno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellido materno"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/Mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen3"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/agregar"
+            android:src="@android:drawable/ic_menu_add"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/Modificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/modificar"
+            android:src="@android:drawable/ic_menu_save"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/Eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/eliminar"
+            android:src="@android:drawable/ic_menu_delete"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/buscar"
+            android:src="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen3"
+        android:text="@string/lista_de_usuarios"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/LVDatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

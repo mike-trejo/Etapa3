@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Etapa3</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="registro_de_usuarios">Registro de usuarios</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido_paterno">Apellido paterno</string>
+    <string name="email">eMail</string>
+    <string name="agregar">Agregar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="lista_de_usuarios">Lista de usuarios</string>
+    <string name="buscar">Buscar</string>
+    <string name="buscar_usuario">Buscar usuario</string>
+    <string name="buscar_email">eMail</string>
+</resources>
